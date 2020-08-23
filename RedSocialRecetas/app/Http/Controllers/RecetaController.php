@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Receta;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class RecetaController extends Controller
 {
@@ -24,7 +26,8 @@ class RecetaController extends Controller
      */
     public function create()
     {
-        //
+        return view('recetas.create');
+        
     }
 
     /**
@@ -35,7 +38,16 @@ class RecetaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = request();
+
+        echo 'console.log(' . json_encode($data) . ')';
+        DB::table('recetas')->insert([
+            'titulo' => $data['titulo']
+        ]);
+        
+        //redirecionnar
+
+        return redirect()-> action('RecetaController@index');
     }
 
     /**
