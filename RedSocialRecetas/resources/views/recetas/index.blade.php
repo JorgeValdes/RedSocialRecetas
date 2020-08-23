@@ -1,16 +1,25 @@
-<h1>Recetas </h1>
+@extends('layouts.app')
 
+@section('content')
 
-@foreach($recetas as $receta)
-<li> {{$receta}}</li>
-    
-@endforeach
+<h2 class="text-center mb-5">Administra tus recetas </h2>
+<div class="=col-md-10 mx-auto bg-white p-3">
+    <table class="table">
+        <thead class="bg-primary text-ligth">
+            <tr>
+                <th scole="col">Titulo</th>
+                <th scole="col">Categoria</th>
+                <th scole="col">Acciones</th>
+            </tr>
+        </thead>
 
+        <tbody>
+            <tr>
+                <td>PIzzas</td>
+                <td>laskds</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-
-<h2>Categorias </h2>
-
-
-@foreach($categorias as $categoria)
-<li> {{$categoria}} </li>
-@endforeach
+@endsection

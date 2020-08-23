@@ -17,8 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/recetas', 'RecetaController');
+// Route::get('/recetas', 'RecetaController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/recetas', 'RecetaController@index');
+
+
+// Route::get('/home', 'HomeController@index')->name('home');
