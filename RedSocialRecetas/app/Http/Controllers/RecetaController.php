@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\DB;
 
 class RecetaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+  
     /**
      * Display a listing of the resource.
      *
@@ -25,8 +31,11 @@ class RecetaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        return view('recetas.create');
+    {   
+        //metodo get me trae todos los elementos de esa tabla y
+        // tambien el metodo pluck solamente nos trae los campos que nos quiere 
+        $categorias = DB::table('categoria_receta')->get()->pluck('nombre', 'id');
+        return view('recetas.create')->with('categorias', $categorias);
         
     }
 
@@ -38,7 +47,13 @@ class RecetaController extends Controller
      */
     public function store(Request $request)
     {
-        $data = request();
+        $data = request()->validate([
+            'titulo' => 'required|min:6',
+            'categoria' => 'required',
+            'preparacion' => 'required',
+            'ingredientes' => 'required',
+            //'imagen' => 'required|image|size:1000'//se le púeden agregar diferentes reglas de validacion
+        ]);
 
         echo 'console.log(' . json_encode($data) . ')';
         DB::table('recetas')->insert([
