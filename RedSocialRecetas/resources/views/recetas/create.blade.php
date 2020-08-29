@@ -20,7 +20,7 @@
 <div class="row justify-content-center mt-5">
     <div class="col-md-8">
         {{-- se pueden realizar dos tipos de validaciones desde html 5 , o desde no validate del controlador --}}
-        <form method="POST" action="{{ route('recetas.store')}}" novalidate>
+        <form method="POST" action="{{ route('recetas.store')}}" enctype="multipart/form-data"  novalidate>
             @csrf
             <div class="form-group">
                 <label for="titulo">Titulo Receta </label>
@@ -49,9 +49,11 @@
                 class="form-control @error('categoria') is-invalid @enderror"
                 id="categoria">   
                     <option value="">--Seleccione--</option>
-                    @foreach($categorias as $id => $categoria)
+                    @foreach($categorias as $categoria)
                         <option 
-                        value="{{$id}}" {{ old('categoria') == $id ? 'selected' : "" }}>{{ $categoria}}</option>
+                        value="{{$categoria->id}}" 
+                        {{ old('categoria') == $categoria->id ? 'selected' : "" }}>{{ $categoria->nombre}}
+                        </option>
                     @endforeach 
                     
                 </select>
