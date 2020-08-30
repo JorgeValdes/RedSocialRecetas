@@ -16,7 +16,7 @@ class RecetaController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => 'show']);
     }
 
 
@@ -118,7 +118,9 @@ class RecetaController extends Controller
      */
     public function show(Receta $receta)
     {
-        //
+        //return view('recetas.show', compact('receta'));
+        //constructor pk que las recetas que se muestren
+        return view('recetas.show')->with('receta', $receta);
     }
 
     /**
@@ -129,7 +131,8 @@ class RecetaController extends Controller
      */
     public function edit(Receta $receta)
     {
-        //
+        $categorias = CategoriaReceta::all(['id', 'nombre']);
+        return view('recetas.edit', compact('categorias', 'receta')); /* uso compact en el caso que sean mas de dos atributos para pasar a la vista */
     }
 
     /**
@@ -141,8 +144,41 @@ class RecetaController extends Controller
      */
     public function update(Request $request, Receta $receta)
     {
-        //
+
+        //return $receta;
+        $this->authorize('update', $receta);
+
+        $data = $request->validate([
+            'titulo' => 'required|min:6',
+            'categoria' => 'required',
+            'preparacion' => 'required',
+            'ingredientes' => 'required',
+            //se le púeden agregar diferentes reglas de validacion
+        ]);
+
+        //Asignar los valores
+        $receta->titulo = $data['titulo'];
+        $receta->categoria_id = $data['categoria'];
+        $receta->preparacion = $data['preparacion'];
+        $receta->ingredientes = $data['ingredientes'];
+
+        //En el caso que el usuario quiera subir una nueva imagen
+        if (request('imagen')) {
+            $ruta_imagen = $request['imagen']->store('upload-recetas', 'public');
+
+            //resize de la imagen
+
+            $img = Image::make(public_path("storage/{$ruta_imagen}"))->fit(1200, 550);
+            $img->save();
+
+            //Asignamos el objetos
+            $receta->imagen = $ruta_imagen;
+        }
+
+        $receta->save();
+        return redirect()->action('RecetaController@index');
     }
+
 
     /**
      * Remove the specified resource from storage.
