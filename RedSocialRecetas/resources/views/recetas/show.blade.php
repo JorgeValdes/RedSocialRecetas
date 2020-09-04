@@ -10,14 +10,16 @@
         <div class="receta-meta">
         <p>
             <span class="font-weight-bold text-primary">Escrito en : 
-                {{$receta->categoria->nombre}}
+               
             </span>
+            <span> {{$receta->categoria->nombre}}</span>
         </p>
           <p>
             <span class="font-weight-bold text-primary">Autor : 
                 {{-- Todo : Mostrar el usuario --}}
-                {{$receta->autor->name}}
+                
             </span>
+            <span>{{$receta->autor->name}}</span>
         </p>
            <p>
             <span class="font-weight-bold text-primary">Fecha:</span>
@@ -25,7 +27,7 @@
 
                 @php
                     $fecha = $receta->created_at
-                @endphp
+                @endphp 
                  <fecha-receta fecha="{{$fecha}}"></fecha-receta>
             
         </p>

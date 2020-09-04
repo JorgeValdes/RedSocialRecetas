@@ -10,6 +10,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
+use Illuminate\Auth\Access\HandlesAuthorization;
 
 
 class RecetaController extends Controller
@@ -145,8 +146,8 @@ class RecetaController extends Controller
     public function update(Request $request, Receta $receta)
     {
 
-        //return $receta;
-        $this->authorize('update', $receta);
+        //return revisar el policy;
+        //$this->authorize('update', $receta);
 
         $data = $request->validate([
             'titulo' => 'required|min:6',
@@ -188,6 +189,10 @@ class RecetaController extends Controller
      */
     public function destroy(Receta $receta)
     {
-        //
+        //Ejecutar el policy
+
+
+        $receta->delete();
+        return redirect()->action('RecetaController@index');
     }
 }
