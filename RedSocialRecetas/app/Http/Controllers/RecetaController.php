@@ -192,6 +192,7 @@ class RecetaController extends Controller
         //Ejecutar el policy
 
 
+
         $receta->delete();
         return redirect()->action('RecetaController@index');
     }
