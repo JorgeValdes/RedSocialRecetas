@@ -33,6 +33,8 @@ Route::delete('/recetas/{receta}', 'RecetaController@destroy')->name('recetas.de
 
 
 Route::get('perfiles/{perfil}', 'PerfilController@show')->name('perfil.show');
+Route::get('perfiles/{perfil}/edit', 'PerfilController@edit')->name('perfil.edit');
+Route::put('perfiles/{perfil}/update', 'PerfilController@update')->name('perfil.update');
 
 // Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();

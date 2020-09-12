@@ -9,6 +9,6 @@ class Perfil extends Model
     //relacion de perfil 1:1
     public function usuario()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
