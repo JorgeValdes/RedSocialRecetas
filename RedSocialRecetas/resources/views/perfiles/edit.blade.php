@@ -19,7 +19,7 @@
 
     <div class="row justify-content-center mt-5">
         <div class="col-md-10 bg-white-p-3">
-            <form action="{{ route('perfil.update', ['perfil' => $perfil->id]) }}"
+            <form action="{{ route('perfiles.update', ['perfil' => $perfil->id]) }}"
                   method="POST"
                   enctype="multipart/form-data"
             >
