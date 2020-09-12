@@ -1948,7 +1948,7 @@ __webpack_require__.r(__webpack_exports__);
               title: "Receta Eliminada",
               text: "Se elimino la receta",
               icon: "success"
-            }); //elminar Receta del dom
+            }); //ELIMINA LA RECETA DEL DOM PARA QUE SE ACTUALIZE AUTOMATICAMENTE
 
 
             _this.$el.parentNode.parentNode.parentNode.removeChild(_this.$el.parentNode.parentNode);

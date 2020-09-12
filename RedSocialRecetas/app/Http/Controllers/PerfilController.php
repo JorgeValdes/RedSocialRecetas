@@ -46,7 +46,8 @@ class PerfilController extends Controller
      */
     public function show(Perfil $perfil)
     {
-        //
+
+        return $perfil;
     }
 
     /**
