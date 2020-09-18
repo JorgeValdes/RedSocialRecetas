@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Hash;
 
 class UsuarioSeeder extends Seeder
 {
-    /**
+    /*
      * Run the database seeds.
      *
      * @return void
@@ -24,7 +24,7 @@ class UsuarioSeeder extends Seeder
         ]);
 
 
-        $user->perfil()->create();
+        // $user->perfil()->create();
 
 
         $user2 = User::create([
@@ -34,6 +34,6 @@ class UsuarioSeeder extends Seeder
             'url' => 'https://radio.x-team.com/?utm_source=facebook',
         ]);
 
-        $user2->perfil()->create();
+        // $user2->perfil()->create(); 
     }
 }

@@ -30,8 +30,10 @@ class RecetaController extends Controller
     {
 
         //Auth::user()->recetas->dd(); //con este método y la relacion me traigo las recetas por usuario
+        //recetas con paginacion
+        $usuario = auth()->user()->id;
+        $recetas = Receta::where('user_id', $usuario)->paginate(2);
 
-        $recetas = auth()->user()->recetas;
         return view('recetas.index')->with('recetas', $recetas);
     }
 

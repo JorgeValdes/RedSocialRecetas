@@ -2,9 +2,8 @@
 
 @section('botones')
      {{--  {{Auth::user() }}  --}}
-<a href="{{ route('recetas.create')}}" class="btn btn-primary mr-2 text-white">Crear recetas</a>
-<a href="{{ route('perfiles.edit', ['perfil'=> Auth::user()->id ]) }}" class="btn btn-success mr-2 text-white">Editar Perfil</a>
-<a href="{{ route('perfiles.show', ['perfil'=> Auth::user()->id ]) }}" class="btn btn-dark mr-2 text-white">Ver Perfil</a>
+    {{-- se crea un archivo para la navegacion  --}}
+    @include('ui.navegacion')
 @endsection
 
 @section('content')
@@ -48,6 +47,12 @@
          
         </tbody>
     </table>
+
+    <div class="col-12 mt-4 justify-content-center d-flex">
+    {{$recetas->links()}}
+
+    </div>
+
 </div>
 
 @endsection
