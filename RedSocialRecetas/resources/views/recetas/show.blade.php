@@ -45,6 +45,8 @@
             </h2>
             {!! $receta->preparacion !!}
         </div>
+        <h2>aqui coke </h2>
+        <likebutton></likebutton>
         </div>
     </article>
 @endsection

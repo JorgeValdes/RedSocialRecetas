@@ -27,6 +27,10 @@ Vue.component(
     "eliminar-receta",
     require("./components/EliminarReceta.vue").default
 );
+Vue.component(
+    "likebutton",
+    require("./components/LikeButton.vue").default
+);
 Vue.component("fecha-receta", require("./components/FechaReceta.vue").default);
 
 console.log(Vue.prototype);
@@ -38,4 +42,11 @@ console.log(Vue.prototype);
 
 const app = new Vue({
     el: "#app"
+});
+
+
+//Jquery
+
+$('.like-btn').on('click', function () {
+    $(this).toggleClass('like-active');
 });
