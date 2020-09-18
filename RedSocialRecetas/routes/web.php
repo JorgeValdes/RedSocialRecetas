@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LikesController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -40,4 +41,8 @@ Route::get('perfiles/{perfil}/edit', 'PerfilController@edit')->name('perfiles.ed
 Route::put('perfiles/{perfil}/update', 'PerfilController@update')->name('perfiles.update');
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+//Almacenar llos likes de la recetas
+Route::post('/recetas/{receta}', 'LikesController@update')->name('likes.update');
+
 Auth::routes();

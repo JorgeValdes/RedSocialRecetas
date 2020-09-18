@@ -30,13 +30,17 @@ class RecetaController extends Controller
     {
 
         //Auth::user()->recetas->dd(); //con este método y la relacion me traigo las recetas por usuario
+        //Auth::user()->recetas->dd(); //con este método y la relacion me traigo las recetias por usuario
         //recetas con paginacion
-        $usuario = auth()->user()->id;
-        $recetas = Receta::where('user_id', $usuario)->paginate(2);
+        $usuario = auth()->user();
 
-        return view('recetas.index')->with('recetas', $recetas);
+        // $meGusta = auth()->user()->meGusta;
+        $recetas = Receta::where('user_id', $usuario->id)->paginate(2);
+
+        return view('recetas.index')
+            ->with('recetas', $recetas)
+            ->with('usuario', $usuario);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -121,9 +125,13 @@ class RecetaController extends Controller
      */
     public function show(Receta $receta)
     {
+        //obtener si el usuario le ha dado me gusta a la receta
+        $like = (auth()->user()) ? auth()->user()->meGusta->contains($receta->id) : false;
         //return view('recetas.show', compact('receta'));
         //constructor pk que las recetas que se muestren
-        return view('recetas.show')->with('receta', $receta);
+
+        $likes = $receta->likes->count();
+        return view('recetas.show', compact('receta', 'like', 'likes'));
     }
 
     /**

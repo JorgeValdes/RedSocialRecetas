@@ -45,8 +45,15 @@
             </h2>
             {!! $receta->preparacion !!}
         </div>
-        <h2>aqui coke </h2>
-        <likebutton></likebutton>
+     
+        <likebutton 
+        receta-id="{{ $receta->id}}"
+        like="{{$like}}"
+        likes="{{$likes}}"
+        >
+        
+        
+        </likebutton>
         </div>
     </article>
 @endsection
