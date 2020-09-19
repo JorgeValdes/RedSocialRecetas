@@ -11,14 +11,18 @@ class InicioController extends Controller
 {
     public function index()
     {
-        // Mostar las recetas por cantidad de votos
+        // Mostar las recetas por cantidad de votosas
         // $votadas = Receta::has('likes', '>', 0)->get(); una forma de hacerlo
 
-        $votadas = Receta::withCount('likes')->orderBy('likes_count', 'desc')->take(3)->get();
+        $votadas = Receta::withCount('likes')->orderBy('likes_count', 'DESC')->take(3)->get();
         // has hace que el método cuente 
+
+
         // Obtener las recetas mas nuevas 
         //$nuevas = Receta::orderBy('created_at', 'ASC')->get();
         $nuevas = Receta::latest()->take(5)->get();
+
+
         //Recetas por categoria
         // una forma de hacerlo es esa 
         // $mexicana = Receta::lastest()->take(6)->get();
@@ -37,6 +41,6 @@ class InicioController extends Controller
         }
 
         //pasarlas a la vista
-        return view("inicio.index", compact('nuevas', 'recetas'));
+        return view("inicio.index", compact('nuevas', 'recetas', 'votadas'));
     }
 }

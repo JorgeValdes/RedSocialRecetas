@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="justify-content-center">
     <span class="like-btn" v-on:click="likeReceta" :class="{ 'like-active' : this.like}"></span>
 
     <p>{{cantidadLikes }} Les gustó esta receta</p>

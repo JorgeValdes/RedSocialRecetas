@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <article class="contenido-receta mb-8">
-        <h1 class="text-center mb-2">{{$receta->titulo}}</h1>
+    <article class="contenido-receta bg-white p-5 shadow">
+        <h1 class="text-center mb-4">{{$receta->titulo}}</h1>
         <div class="imagen-receta">
             <img src="/storage/{{ $receta->imagen}}" class="w-100">
 
         </div>
-        <div class="receta-meta">
+        <div class="receta-meta mt-5">
         <p>
             <span class="font-weight-bold text-primary">Escrito en : 
                
