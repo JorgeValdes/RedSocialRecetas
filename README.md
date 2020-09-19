@@ -1,18 +1,18 @@
 ## Resumen
 
-> Breve descripción de lo que hace tu producto.
-
-## RedSocialRecetas
-
-
 Este es un proyecto , en cual consiste en una plataforma donde , el usuario se podra autenticar, 
 crear y votar distintas recetas. El usuario puede crear recetas , elijiendo una categoria.
 Tambien habra una logica para los votos el cual sirve "valorar" las recetas mas comentadas...
 
+## RedSocialRecetas
 
-Uno o dos párrafos sobre tu producto y el problema que resuelve.
 
-![](../Home.png)
+![](Home.png)
+
+Mas que resolver un problema , es un aporte a la comunidad sobre como , un blog de poder dejar algunas recetas tipicas,
+y poder votarlas por distintintas categorias
+
+
 
 
 ## Instalación
@@ -95,10 +95,10 @@ Notificaciones y Middleware
 
 ## Meta
 
-Jorge Valdes FLores – [@TuTwitter](@jorgevaldes47) – jorge.valdes.01@alu.ucm.cl
+Jorge Valdes FLores – (@jorgevaldes47) – jorge.valdes.01@alu.ucm.cl
 
 Distribuido bajo la licencia XYZ. Ver ``LICENSE`` para más información.
 
-[https://github.com/JorgeValdes(https://github.com/JorgeValdes]
+[https://github.com/JorgeValdes]
 
 
