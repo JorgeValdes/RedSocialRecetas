@@ -1,6 +1,8 @@
-##Resumen
+## Resumen
 
 > Breve descripción de lo que hace tu producto.
+
+## RedSocialRecetas
 
 
 Este es un proyecto , en cual consiste en una plataforma donde , el usuario se podra autenticar, 
@@ -12,7 +14,7 @@ Uno o dos párrafos sobre tu producto y el problema que resuelve.
 
 ![](../Home.png)
 
-##Nombre del Proyecto , RedSocialRecetas
+
 ## Instalación
 
 OS X , Windows y Linux:
@@ -44,7 +46,6 @@ Algunos casos de ejemplo sobre cómo utilizar tu producto. Algunos bloques de c�
 
 ## Configuración de desarrollo
 
-Describe como instalar todas las dependencias y como ejecutar la batería de tests (en caso de tenerla). Si funciona en múltiples plataformas intenta describirlas todas si tuviesen pasos diferentes.
 
 ```sh
 Creación y Autenticación de Usuarios
@@ -88,29 +89,16 @@ Notificaciones y Middleware
 
 ## Historial de versiones
 
-* 0.2.1
-    * CAMBIO: Actualizada la documentación (el módulo de código permanece igual)
-* 0.2.0
-    * CAMBIO: Eliminado `setDefaultXYZ()`
-    * AÑADIDO: Añadido `init()`
-* 0.1.1
-    * ARREGLADO: Cuelgue cuando se llama a `baz()` (Gracias a  @NombreDelAmableContribuidor!)
-* 0.1.0
-    * La primera release
-    * CAMBIO: Renombrado `foo()` a `bar()`
 * 0.0.1
-    * Trabajo en progreso
+    * CAMBIO: Actualizada la documentación (el módulo de código permanece igual)
+
 
 ## Meta
 
-Tu nomre – [@TuTwitter](@jorgevaldes47) – jorge.valdes.01@alu.ucm.cl
+Jorge Valdes FLores – [@TuTwitter](@jorgevaldes47) – jorge.valdes.01@alu.ucm.cl
 
 Distribuido bajo la licencia XYZ. Ver ``LICENSE`` para más información.
 
-[https://github.com/yourname/github-link](https://github.com/JorgeValdes)
+[https://github.com/JorgeValdes(https://github.com/JorgeValdes]
 
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+
