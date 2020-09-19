@@ -3,6 +3,8 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import 'owl.carousel';
+
 import VueSweetalert2 from "vue-sweetalert2";
 import Vue from "vue";
 
@@ -46,7 +48,34 @@ const app = new Vue({
 
 
 //Jquery
-
+/* 
 $('.like-btn').on('click', function () {
     $(this).toggleClass('like-active');
+});
+ */
+
+/* Carrouse con owl */
+
+jQuery(document).ready(function () {
+    jQuery('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayHoverPause: true,
+        items: 2,
+        responsive: {
+            0: {
+                items: 1,
+            },
+
+            600: {
+                items: 2,
+
+            },
+
+            1000: {
+                items: 3
+            }
+        }
+    });
 });
