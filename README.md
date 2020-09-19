@@ -1,31 +1,65 @@
-# README.MD
-Making attractive and usable readme's. 
-This is a short description about the content of my proyect. This text have to be simple and explicit.
+# Nombre de producto
+> Breve descripción de lo que hace tu producto.
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-## Content
-This proyect has two branches: develop1 and develop2. **develop1** contains the tests of the repositories and **develop2** contains the test of the use cases.
+Uno o dos párrafos sobre tu producto y el problema que resuelve.
 
-## Demo
-If you want to see the demo of this proyect deployed, you can visit [Demo of the proyect](https://anabelisa.co/tips-para-hacer-un-buen-readme-md/)
+![](../Home.png)
 
-## How to clone
-If you have special requirements, you have to list it step by step.
-* This is the first step
-* Then you have to do this
-* Finally do this
+## Instalación
 
-Markdown has enumation and nested lists.
+OS X y Linux:
 
-## Installation
-To install and run this proyect just type and execute
-```bash
-npm install
+```sh
+npm install my-crazy-module --save
 ```
-## Preview
-Insert here an image of the preview if your project has one. The image can be into the project, you have to indicate the route and look like this.
 
-(/RedSocialesRecetas/Home.png)
+Windows:
 
-### Notes
-If you want to learn all about markdown i recommend you visit the site [markdown.es](https://markdown.es/sintaxis-markdown/)
+```sh
+edit autoexec.bat
+```
 
+## Ejemplo de uso
+
+Algunos casos de ejemplo sobre cómo utilizar tu producto. Algunos bloques de código y capturas de pantalla harán que sea más atractivo.
+
+## Configuración de desarrollo
+
+Describe como instalar todas las dependencias y como ejecutar la batería de tests (en caso de tenerla). Si funciona en múltiples plataformas intenta describirlas todas si tuviesen pasos diferentes.
+
+```sh
+make install
+npm test
+```
+
+## Historial de versiones
+
+* 0.2.1
+    * CAMBIO: Actualizada la documentación (el módulo de código permanece igual)
+* 0.2.0
+    * CAMBIO: Eliminado `setDefaultXYZ()`
+    * AÑADIDO: Añadido `init()`
+* 0.1.1
+    * ARREGLADO: Cuelgue cuando se llama a `baz()` (Gracias a  @NombreDelAmableContribuidor!)
+* 0.1.0
+    * La primera release
+    * CAMBIO: Renombrado `foo()` a `bar()`
+* 0.0.1
+    * Trabajo en progreso
+
+## Meta
+
+Tu nomre – [@TuTwitter](https://twitter.com/dbader_org) – TuEmail@example.com
+
+Distribuido bajo la licencia XYZ. Ver ``LICENSE`` para más información.
+
+[https://github.com/yourname/github-link](https://github.com/dbader/)
+
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
