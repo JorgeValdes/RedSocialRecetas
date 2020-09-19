@@ -10,5 +10,5 @@ Añadir Mapas en Laravel
 Integrar Librerias JS como Dropzone, Leaflet, MomentJS, Sweet Alert y mucho mas!
 Aprende temas avanzados de Laravel como Notificaciones y Middleware</p>
 
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+
 
