@@ -12,7 +12,10 @@ class InicioController extends Controller
     public function index()
     {
         // Mostar las recetas por cantidad de votos
-        $votadas = Receta::has(); // has hace que el método cuente 
+        // $votadas = Receta::has('likes', '>', 0)->get(); una forma de hacerlo
+
+        $votadas = Receta::withCount('likes')->orderBy('likes_count', 'desc')->take(3)->get();
+        // has hace que el método cuente 
         // Obtener las recetas mas nuevas 
         //$nuevas = Receta::orderBy('created_at', 'ASC')->get();
         $nuevas = Receta::latest()->take(5)->get();
