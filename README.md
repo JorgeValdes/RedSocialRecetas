@@ -1,80 +1,31 @@
-Hola , se realizar un sistema pequeño en Laravel 7 ,
- Blade para mostrar información en tus aplicaciones
-Relacionar Tablas con Eloquent el ORM de Laravel
-Métodos para consultar la base de datos con Eloquent
-Crear aplicaciones Dinamicas que sirvan datos desde una base de datos
-Añadir autenticación de Usuarios
-Subir archivos con Laravel
-Crear CRUD's
-Añadir Mapas en Laravel
-Integrar Librerias JS como Dropzone, Leaflet, MomentJS, Sweet Alert y mucho mas!
-Aprende temas avanzados de Laravel como Notificaciones y Middleware
+# README.MD
+Making attractive and usable readme's. 
+This is a short description about the content of my proyect. This text have to be simple and explicit.
 
+## Content
+This proyect has two branches: develop1 and develop2. **develop1** contains the tests of the repositories and **develop2** contains the test of the use cases.
 
-Título del Proyecto
-Acá va un párrafo que describa lo que es el proyecto
+## Demo
+If you want to see the demo of this proyect deployed, you can visit [Demo of the proyect](https://anabelisa.co/tips-para-hacer-un-buen-readme-md/)
 
-Comenzando rocket
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+## How to clone
+If you have special requirements, you have to list it step by step.
+* This is the first step
+* Then you have to do this
+* Finally do this
 
-Mira Deployment para conocer como desplegar el proyecto.
+Markdown has enumation and nested lists.
 
-Pre-requisitos clipboard
-Que cosas necesitas para instalar el software y como instalarlas
+## Installation
+To install and run this proyect just type and execute
+```bash
+npm install
+```
+## Preview
+Insert here an image of the preview if your project has one. The image can be into the project, you have to indicate the route and look like this.
 
-Da un ejemplo
-Instalación wrench
-Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose
+![](/preview.jpg)
 
-Dí cómo será ese paso
+### Notes
+If you want to learn all about markdown i recommend you visit the site [markdown.es](https://markdown.es/sintaxis-markdown/)
 
-Da un ejemplo
-Y repite
-
-hasta finalizar
-Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo
-
-Ejecutando las pruebas gear
-Explica como ejecutar las pruebas automatizadas para este sistema
-
-Analice las pruebas end-to-end nut_and_bolt
-Explica que verifican estas pruebas y por qué
-
-Da un ejemplo
-Y las pruebas de estilo de codificación keyboard
-Explica que verifican estas pruebas y por qué
-
-Da un ejemplo
-Despliegue package
-Agrega notas adicionales sobre como hacer deploy
-
-Construido con hammer_and_wrench
-Menciona las herramientas que utilizaste para crear tu proyecto
-
-Dropwizard - El framework web usado
-Maven - Manejador de dependencias
-ROME - Usado para generar RSS
-Contribuyendo paperclips
-Por favor lee el CONTRIBUTING.md para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-Wiki book
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra Wiki
-
-Versionado pushpin
-Usamos SemVer para el versionado. Para todas las versiones disponibles, mira los tags en este repositorio.
-
-Autores black_nib
-Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
-
-Andrés Villanueva - Trabajo Inicial - villanuevand
-Fulanito Detal - Documentación - fulanitodetal
-También puedes mirar la lista de todos los contribuyentes quíenes han participado en este proyecto.
-
-Licencia page_facing_up
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo LICENSE.md para detalles
-
-Expresiones de Gratitud gift
-Comenta a otros sobre este proyecto loudspeaker
-Invita una cerveza beer o un café coffee a alguien del equipo.
-Da las gracias públicamente nerd_face.
-etc.
