@@ -1,22 +1,38 @@
-# Nombre de producto
+##Resumen
+
 > Breve descripción de lo que hace tu producto.
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+
+
+Este es un proyecto , en cual consiste en una plataforma donde , el usuario se podra autenticar, 
+crear y votar distintas recetas. El usuario puede crear recetas , elijiendo una categoria.
+Tambien habra una logica para los votos el cual sirve "valorar" las recetas mas comentadas...
+
 
 Uno o dos párrafos sobre tu producto y el problema que resuelve.
 
 ![](../Home.png)
 
+##Nombre del Proyecto , RedSocialRecetas
 ## Instalación
 
-OS X y Linux:
+OS X , Windows y Linux:
+
 
 ```sh
-npm install my-crazy-module --save
+
+Rename .env.example to .env and fill the options.
+
+
+composer install
+npm install
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+gulp
+php artisan serve
 ```
 
-Windows:
+
 
 ```sh
 edit autoexec.bat
@@ -31,8 +47,43 @@ Algunos casos de ejemplo sobre cómo utilizar tu producto. Algunos bloques de c�
 Describe como instalar todas las dependencias y como ejecutar la batería de tests (en caso de tenerla). Si funciona en múltiples plataformas intenta describirlas todas si tuviesen pasos diferentes.
 
 ```sh
-make install
-npm test
+Creación y Autenticación de Usuarios
+
+Hash para passwords
+
+Paginación
+
+Subida de Archivos
+
+Seguridad y Protección
+
+Webpack para añadir CSS o Librerías JS
+
+Envio de Emails
+
+Confirmación de Cuentas
+
+Sanitización de Inputs
+
+Con todo esto podrás crear aplicaciones web modernas, pero el curso va más allá, aprenderás otros temas tales como
+
+Integrar Librerías JavaScript con tus aplicaciones Laravel tales como Sweet Alert 2, Dropzone JS, MomentJS y mucho más
+
+Eloquent para relacionar Tablas y crear aplicaciones más robustas y dinamicas
+
+Integrar el framework VueJS en Laravel
+
+Agregar Vue Router y Vuex a Laravel
+
+Crear API's con Laravel que se consumirán con Vue
+
+Agregar Tailwind CSS a tus proyectos
+
+Crear proyectos Full Stack en Laravel
+
+Notificaciones y Middleware
+
+
 ```
 
 ## Historial de versiones
@@ -52,11 +103,11 @@ npm test
 
 ## Meta
 
-Tu nomre – [@TuTwitter](https://twitter.com/dbader_org) – TuEmail@example.com
+Tu nomre – [@TuTwitter](@jorgevaldes47) – jorge.valdes.01@alu.ucm.cl
 
 Distribuido bajo la licencia XYZ. Ver ``LICENSE`` para más información.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/yourname/github-link](https://github.com/JorgeValdes)
 
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
